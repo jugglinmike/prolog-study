@@ -10,3 +10,5 @@ item(3, pencil, 10).
 inventory(1, 5).
 inventory(2, 5).
 inventory(3, 15).
+
+stock(Name) :- item(ID, Name, Price), inventory(ID, Y), write(Y).
